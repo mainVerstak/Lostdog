@@ -1,0 +1,223 @@
+.card
+    max-width: 400px
+    width: 100%
+    background: #fff
+    border-radius: 10px
+    cursor: pointer
+    display: block
+    box-shadow: none
+    backface-visibility: hidden
+    &::before
+        backface-visibility: hidden
+    &:hover
+        box-shadow: 0px 7px 12px rgba(25, 26, 38, 0.12)
+        .slider-card
+            .swiper-pagination-bullet
+                opacity: 1
+                visibility: visible
+    &__top
+        width: 100%
+        height: 258px
+        border-radius: 10px 10px 0 0
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        background: #E3E9FF
+        img
+            display: flex
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &_empty
+            border: 1px solid #9AB0FF
+            background: #E3E9FF
+            img
+                max-width: 30%
+                width: auto
+                max-height: 46%
+                height: auto
+    &__icon-dog
+        transform: translate(-10%, -5%)
+    &__bottom
+        padding: 25px 35px 40px
+        position: relative
+    &__date
+        font-size: 14px
+        margin-bottom: 10px
+    &__title
+        font-weight: 800
+        font-size: 24px
+        line-height: 109.5%
+        color: #2E2532
+        margin-bottom: 16px
+    &__text
+        font-size: 18px
+        line-height: 100%
+        color: #101010
+        display: -webkit-box
+        -webkit-line-clamp: 5
+        -webkit-box-orient: vertical
+        overflow: hidden
+    &__location
+        margin-bottom: 30px
+    &__favorite
+        position: absolute
+        top: 20px
+        right: 32px
+    &_lostdog
+        .card
+            &__text
+                line-height: 117.5%
+        &.card_row
+            .card
+                &__text
+                    margin-bottom: 0
+                &__title
+                    margin-bottom: 17px
+                &__location
+                    margin-bottom: 17px
+                &__edit-btns
+                    position: absolute
+                    top: 17px
+                    right: 20px
+                    display: flex
+                    > *
+                        margin-right: 10px
+                        &:last-child
+                            margin-right: 0
+    .slider-card
+        .swiper-pagination-bullet
+            opacity: 0
+            visibility: hidden
+            transition: .2s
+    &__link
+        font-size: 18px
+
+    &_disabled
+        pointer-events: none
+        user-select: none
+        opacity: 0.5
+        .card__edit-btns
+            opacity: 0
+
+.slider-card
+    width: 100%
+    height: 100%
+    img
+        width: 100%
+        height: 100%
+        display: block
+        object-fit: cover
+    .swiper-pagination
+        display: flex
+        justify-content: center
+        bottom: 15px
+        padding-right: 30px
+        padding-left: 30px
+        &.swiper-pagination-lock
+            display: none
+    .swiper-pagination-bullet
+        height: 5px
+        max-width: 75px
+        width: 100%
+        flex: 1
+        margin: 0 10px
+        border-radius: 0
+
+.card-list
+    .card + .card
+        margin-top: 20px
+
+.card-grid
+    margin: 0 -10px -30px
+    display: flex
+    flex-wrap: wrap
+    backface-visibility: hidden
+    .card
+        margin: 0 10px 30px
+        width: calc(33.3% - 20px)
+
+@media only screen and (max-width : 1199px)
+    .card
+        &__bottom
+            padding: 25px 22px 33px
+        &__favorite
+            top: 16px
+            right: 22px
+
+    .card-grid
+        justify-content: space-around
+        .card
+            width: calc(50% - 20px)
+
+@media only screen and (min-width : 768px)
+    .card
+        &_row
+            max-width: 100%
+            display: flex
+            .card
+                &__top
+                    flex-shrink: 0
+                    width: 400px
+                    height: 258px
+                    border-radius: 10px 0px 0px 10px
+                &__bottom
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    flex: 1
+                    padding: 10px 75px 10px 45px
+                &__title
+                    margin-bottom: 24px
+                &__text
+                    min-height: 54px
+                    -webkit-line-clamp: 5
+                    margin-bottom: 27px
+    @media only screen and (max-width : 991px)
+        .card
+            &_row
+                .card
+                    &__top
+                        flex-shrink: 0
+                        width: 300px
+                        height: 258px
+                        border-radius: 10px 0px 0px 10px
+                    &__bottom
+                        padding: 10px 30px 10px 30px
+                    &__text
+                        font-size: 16px
+                        -webkit-line-clamp: 6
+
+@media only screen and (max-width : 767px)
+    .card
+        &__top
+            height: 206px
+        &__text
+            font-size: 16px
+        &__location
+            font-size: 16px
+        &__bottom
+            padding: 22px 20px 30px
+        &__favorite
+            right: 14px
+
+    .card-grid
+        margin: 0 0 -20px
+        .card
+            width: 100%
+            margin: 0 0 20px
+
+    .card-list
+        margin: 0 0 -20px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        .card
+            width: 100%
+            margin: 0 0 20px
+        .card + .card
+            margin-top: 0
+        .card
+            &__link
+                margin-top: 18px

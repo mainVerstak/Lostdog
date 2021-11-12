@@ -1,0 +1,151 @@
+.main-blog
+    margin-top: 127px
+    margin-bottom: 90px
+    &_page
+        margin-top: 83px
+        margin-bottom: 0
+
+.slider-blog
+    margin: 0 -15px -30px
+    padding: 0 15px 30px
+    &.swiper-container-horizontal
+        > .swiper-pagination-bullets
+            bottom: 0
+            display: flex
+            justify-content: center
+            &.swiper-pagination-lock
+                display: none
+    .swiper-slide
+        display: flex
+        justify-content: center
+
+.blog-article
+    &__title
+        margin-bottom: 24px
+        &_mb
+            &_53
+                margin-bottom: 53px
+    &__date
+        margin-bottom: 15px
+    &__content
+        font-size: 18px
+        line-height: 100%
+        color: #101010
+        margin-bottom: 106px
+        img
+            border-radius: 10px
+            margin-bottom: 40px
+            max-width: 100%
+        p
+            margin-bottom: 18px
+            max-width: 880px
+        ul
+            list-style-type: disc
+            list-style-position: inside
+            margin-bottom: 18px
+        ol
+            list-style: decimal
+            list-style-position: inside
+            margin-bottom: 18px
+        *
+            &:last-child
+                margin-bottom: 0
+    &__comment
+        color: #101010
+        padding-bottom: 16px
+        border-bottom: 1px solid #C4C4C4
+        & + &
+            margin-top: 42px
+    &__comment-head
+        font-weight: bold
+        font-size: 24px
+        line-height: 100%
+        padding-bottom: 16px
+        border-bottom: 1px solid #C4C4C4
+        margin-bottom: 52px
+    &__comment-name
+        font-weight: bold
+        font-size: 24px
+        line-height: 100%
+        margin-bottom: 16px
+    &__comment-text
+        font-size: 18px
+        line-height: 100%
+        max-width: 925px
+        p + p
+            margin-top: 18px
+    &__comment-input
+        margin-top: 40px
+        margin-bottom: 35px
+        &.input-container
+            textarea
+                height: 210px
+
+.add-story
+    margin-top: 90px
+    background: linear-gradient(91.54deg, #FDE8E0 20.98%, #FCE6E0 52.84%, #FAE8D4 88.19%)
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 70px 0
+    &__btn
+        max-width: 444px
+        width: 100%
+
+@media only screen and (max-width : 1199px)
+    .main-blog
+        margin-top: 80px
+
+@media only screen and (max-width : 991px)
+    .main-blog
+        margin-top: 55px
+        margin-bottom: 52px
+        &__show-more
+            display: none
+
+    .slider-blog
+        padding-bottom: 42px
+        margin-bottom: 0
+
+    .blog-article
+        &__title
+            margin-bottom: 12px
+        &__date
+            font-size: 14px
+            margin-bottom: 12px
+        &__content
+            font-size: 16px
+            margin-bottom: 68px
+            img
+                margin-bottom: 30px
+            p,
+            ul,
+            ol
+                margin-bottom: 16px
+        &__comment-head
+            margin-bottom: 21px
+        &__comment-text
+            font-size: 16px
+            p + p
+                margin-top: 16px
+        &__comment
+            padding-bottom: 26px
+            & + &
+                margin-top: 28px
+        &__comment-input
+            margin-top: 30px
+            margin-bottom: 30px
+            &.input-container
+                textarea
+                    height: 160px
+
+@media only screen and (max-width : 767px)
+    .blog-article
+        &__add-comment
+            max-width: 100%
+
+    .add-story
+        margin-top: 45px
+        &__inner
+            padding: 62px 0

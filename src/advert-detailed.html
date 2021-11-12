@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@700&family=Quattrocento+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="main">
+
+            <div class="section section_top a-detailed">
+                <div class="container">
+                    <div class="a-detailed__inner">
+                        <div class="a-detailed__content-mobile">
+                            <div class="h2 a-detailed__title">
+                                <span>Отдам собаку</span>
+                                <div class="btn-favorite a-detailed__favorite js-favorite-detailed"></div>
+                            </div>
+                            <div class="a-detailed__date">
+                                <span class="t-date">
+                                    28.02.2021
+                                </span>
+                            </div>
+                            <div class="t-location a-detailed__location">
+                                Россия, г. Город, Центральный район, ул. Пушкина
+                            </div>
+                        </div>
+                        <div class="a-detailed__slider">
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image:url(./img/gallery.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog1.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog2.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/gallery.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog1.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog2.png)"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image:url(./img/gallery.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog1.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog2.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/gallery.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog1.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/blog2.png)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a-detailed__content">
+                            <div class="a-detailed__content-desktop">
+                                <div class="a-detailed__date">
+                                    <span class="t-date">
+                                        28.02.2021
+                                    </span>
+                                    <div class="btn-favorite a-detailed__favorite js-favorite-detailed"></div>
+                                </div>
+                                <div class="h2 a-detailed__title">
+                                    Отдам собаку
+                                </div>
+                                <div class="t-location a-detailed__location">
+                                    Россия, г. Город, Центральный район, ул. Пушкина
+                                </div>
+                            </div>
+                            <div class="a-detailed__text">
+                                <ul>
+                                    <li>
+                                        Кобель, Овчарка
+                                    </li>
+                                    <li>
+                                        Возраст: 2 года
+                                    </li>
+                                    <li>
+                                        Окрас: серый
+                                    </li>
+                                    <li>
+                                        Кличка: Саймон
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                </p>
+                            </div>
+                            <div class="a-detailed__btns">
+                                <button href="#" class="btn btn_fill btn_size_big btn_w_340 a-detailed__contacts">
+                                    показать контакты
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="remember remember_bottom">
+                @@include('_remember.html')
+            </div>
+        </main>
+
+        @@include('_footer.html')
+    </div>
+    <svg class="hidden-content" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svg_gradient" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9AB0FF" />
+                <stop offset="1" stop-color="#98A2FF" />
+            </linearGradient>
+        </defs>
+    </svg>
+    @@include('_modal.html')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

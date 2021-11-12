@@ -1,0 +1,35 @@
+.swiper-container
+    .swiper-pagination-bullet
+        width: 14px
+        height: 14px
+        opacity: 1
+        background: #CEC9C9
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            z-index: 1
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            padding: 2px
+            border-radius: inherit
+            background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+            mask-composite: exclude
+            opacity: 0
+            transition: .2s
+        &:hover
+            &::after
+                opacity: 1
+
+    .swiper-pagination-bullet-active
+        background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+
+.swiper-container-vertical
+    > .swiper-pagination-bullets
+        &.swiper-pagination-bullets-dynamic
+            width: 14px
+        .swiper-pagination-bullet
+            margin: 20px 0

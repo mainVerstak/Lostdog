@@ -1,0 +1,57 @@
+.account
+    margin-top: 110px
+
+.account-settings
+    &__title
+        margin-bottom: 40px
+        &_bottom
+            margin-top: 82px
+    &__row
+        margin-bottom: 46px
+        display: flex
+        &.account-settings__row
+            &_mb
+                &_26
+                    margin-bottom: 26px
+    &__input-box
+        flex: 1
+        margin-right: 20px
+        &:last-child
+            margin-right: 0
+    &__btns
+        display: flex
+        justify-content: flex-end
+    &__card-control
+        .account-settings
+            &__card-edit
+                display: none
+        &._edit
+            .account-settings
+                &__card-list
+                    display: none
+                &__card-edit
+                    display: block
+
+@media only screen and (max-width : 991px)
+    .account-settings
+        &__title
+            margin-bottom: 30px
+            &_bottom
+                margin-top: 40px
+    .account
+        margin-top: 60px
+
+@media only screen and (max-width : 767px)
+    .account-settings
+        &__row
+            flex-wrap: wrap
+            margin-bottom: 20px
+        &__input-box
+            flex-basis: 100%
+            margin-bottom: 20px
+            margin-right: 0
+            &:last-child
+                margin-bottom: 0
+        &__btns
+            .btn
+                max-width: 100%

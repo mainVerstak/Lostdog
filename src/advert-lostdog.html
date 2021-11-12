@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@700&family=Quattrocento+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="main">
+
+            <div class="section section_top">
+                <div class="container">
+                    <div class="container__inner">
+                        <div class="h1 h1_mb_56">
+                            Пропавшие собаки
+                        </div>
+                    </div>
+                    <div class="gradient-border lost-form">
+                        <div class="lost-form__container">
+                            <div class="lost-form__content">
+                                <div class="lost-form__left">
+                                    <div class="lost-form__row">
+                                        <div class="input-box lost-form__input-box">
+                                            <div class="input-box__label lost-form__label">
+                                                Пол
+                                            </div>
+                                            <div class="input-box__input lost-form__input">
+                                                <div class="lost-form__radio-list">
+                                                    <label class="radio-styled">М
+                                                        <input type="radio" name="radio" checked>
+                                                        <span class="radio-styled__checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-styled">Ж
+                                                        <input type="radio" name="radio">
+                                                        <span class="radio-styled__checkmark"></span>
+                                                    </label>
+                                                    <label class="radio-styled">Неизвестно
+                                                        <input type="radio" name="radio">
+                                                        <span class="radio-styled__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lost-form__row">
+                                        <div class="input-box lost-form__input-box">
+                                            <div class="input-box__label lost-form__label">
+                                                Дата
+                                            </div>
+                                            <div class="input-box__input lost-form__input">
+                                                <div class="input-container input-container_datepicker">
+                                                    <input type="text" class="date-picker-range"
+                                                        placeholder="__.__.____ - __.__.____">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lost-form__row">
+                                        <div class="input-box lost-form__input-box">
+                                            <div class="input-box__label lost-form__label">
+                                                Адрес
+                                            </div>
+                                            <div class="input-box__input lost-form__input">
+                                                <div class="input-container">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="get-location input-box__get-location lost-form__get-location js-get-location">
+                                                Определить мое местоположение
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="lost-form__row">
+                                        <div class="input-box lost-form__input-box">
+                                            <div class="input-box__label lost-form__label">
+                                                Радиус поиска
+                                            </div>
+                                            <div class="input-box__input lost-form__input">
+                                                <div class="range-slider-wrapper">
+                                                    <div id="range-slider" class="range-slider"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn_fill lost-form__search">
+                                        Поиск
+                                    </button>
+                                </div>
+                                <div class="lost-form__right">
+                                    <div class="lost-form__map" id="map-location"></div>
+                                </div>
+                                <button class="btn btn_fill lost-form__search lost-form__search_mobile">
+                                    Поиск
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lost-dog">
+                <div class="container">
+                    <div class="card-grid">
+                        <a href="#" class="gradient-border card card_lostdog">
+                            <div class="card__top">
+                                <div class="swiper-container card__top-slider slider-card">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/blog1.png">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/blog2.png">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/blog3.png">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/blog2.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <div class="t-date card__date">
+                                    28.02.2021
+                                </div>
+                                <div class="card__title">
+                                    Пропала собака
+                                </div>
+                                <div class="t-location card__location">
+                                    Россия, г. Город, Центральный район, ул. Пушкина
+                                </div>
+                                <div class="card__text">
+                                    <ul>
+                                        <li>
+                                            Кобель, Овчарка
+                                        </li>
+                                        <li>
+                                            Возраст: 2 года
+                                        </li>
+                                        <li>
+                                            Окрас: серый
+                                        </li>
+                                        <li>
+                                            Кличка: Саймон
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-favorite card__favorite js-favorite"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="gradient-border card card_lostdog">
+                            <div class="card__top">
+                                <div class="swiper-container card__top-slider slider-card">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/blog1.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <div class="t-date card__date">
+                                    28.02.2021
+                                </div>
+                                <div class="card__title">
+                                    Пропала собака
+                                </div>
+                                <div class="t-location card__location">
+                                    Россия, г. Город, Центральный район, ул. Пушкина
+                                </div>
+                                <div class="card__text">
+                                    <ul>
+                                        <li>
+                                            Кобель, Овчарка
+                                        </li>
+                                        <li>
+                                            Возраст: 2 года
+                                        </li>
+                                        <li>
+                                            Окрас: серый
+                                        </li>
+                                        <li>
+                                            Кличка: Саймон
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-favorite card__favorite js-favorite"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="gradient-border card card_lostdog">
+                            <div class="card__top card__top_empty">
+                                <img src="img/icon-dog.svg" class="card__icon-dog">
+                            </div>
+                            <div class="card__bottom">
+                                <div class="t-date card__date">
+                                    28.02.2021
+                                </div>
+                                <div class="card__title">
+                                    Пропала собака
+                                </div>
+                                <div class="t-location card__location">
+                                    Россия, г. Город, Центральный район, ул. Пушкина
+                                </div>
+                                <div class="card__text">
+                                    <ul>
+                                        <li>
+                                            Кобель, Овчарка
+                                        </li>
+                                        <li>
+                                            Возраст: 2 года
+                                        </li>
+                                        <li>
+                                            Окрас: серый
+                                        </li>
+                                        <li>
+                                            Кличка: Саймон
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-favorite card__favorite js-favorite"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="gradient-border card card_lostdog">
+                            <div class="card__top">
+                                <div class="swiper-container card__top-slider slider-card">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/blog1.png">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/blog2.png">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/blog3.png">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/blog2.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <div class="t-date card__date">
+                                    28.02.2021
+                                </div>
+                                <div class="card__title">
+                                    Пропала собака
+                                </div>
+                                <div class="t-location card__location">
+                                    Россия, г. Город, Центральный район, ул. Пушкина
+                                </div>
+                                <div class="card__text">
+                                    <ul>
+                                        <li>
+                                            Кобель, Овчарка
+                                        </li>
+                                        <li>
+                                            Возраст: 2 года
+                                        </li>
+                                        <li>
+                                            Окрас: серый
+                                        </li>
+                                        <li>
+                                            Кличка: Саймон
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-favorite card__favorite js-favorite"></div>
+                            </div>
+                        </a>
+                        <a href="#" class="gradient-border card card_lostdog">
+                            <div class="card__top">
+                                <div class="swiper-container card__top-slider slider-card">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/blog1.png">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/blog2.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <div class="t-date card__date">
+                                    28.02.2021
+                                </div>
+                                <div class="card__title">
+                                    Пропала собака
+                                </div>
+                                <div class="t-location card__location">
+                                    Россия, г. Город, Центральный район, ул. Пушкина
+                                </div>
+                                <div class="card__text">
+                                    <ul>
+                                        <li>
+                                            Кобель, Овчарка
+                                        </li>
+                                        <li>
+                                            Возраст: 2 года
+                                        </li>
+                                        <li>
+                                            Окрас: серый
+                                        </li>
+                                        <li>
+                                            Кличка: Саймон
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-favorite card__favorite js-favorite"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="remember remember_bottom">
+                @@include('_remember.html')
+            </div>
+        </main>
+
+        @@include('_footer.html')
+    </div>
+    <svg class="hidden-content" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svg_gradient" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9AB0FF" />
+                <stop offset="1" stop-color="#98A2FF" />
+            </linearGradient>
+        </defs>
+    </svg>
+    @@include('_modal.html')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

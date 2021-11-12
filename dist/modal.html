@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@700&family=Quattrocento+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" class="header__logo-img">
+                <span class="header__logo-text">LostDog</span>
+            </a>
+            <div class="header-city header__header-city">
+                <div class="header-city__current" data-modal="#modal-location">
+                    <img src="img/icon-pin.svg" class="header-city__pin">
+                    <span class="header-city__current-name">Москва</span>
+                </div>
+            </div>
+            <nav class="header-nav header__header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link" data-title="Доска объявлений">Доска объявлений</a>
+                        <div class="header-nav__drop">
+                            <div class="header-nav__row">
+                                <div class="header-nav__column">
+                                    <div class="header-nav__drop-title">Ищу</div>
+                                    <a href="#" class="header-nav__drop-link">- Собаку</a>
+                                    <a href="#" class="header-nav__drop-link">- Кошку</a>
+                                    <a href="#" class="header-nav__drop-link">- Другое животное</a>
+                                </div>
+                                <div class="header-nav__column">
+                                    <div class="header-nav__drop-title">Нашел</div>
+                                    <a href="#" class="header-nav__drop-link">- Собаку</a>
+                                    <a href="#" class="header-nav__drop-link">- Кошку</a>
+                                    <a href="#" class="header-nav__drop-link">- Другое животное</a>
+                                </div>
+                            </div>
+                            <div class="header-nav__row">
+                                <div class="header-nav__column">
+                                    <div class="header-nav__drop-title">Отдам/Продам</div>
+                                    <a href="#" class="header-nav__drop-link">- Собаку</a>
+                                    <a href="#" class="header-nav__drop-link">- Кошку</a>
+                                    <a href="#" class="header-nav__drop-link">- Другое животное</a>
+                                </div>
+                                <div class="header-nav__column">
+                                    <div class="header-nav__drop-title">Возьму/куплю</div>
+                                    <a href="#" class="header-nav__drop-link">- Собаку</a>
+                                    <a href="#" class="header-nav__drop-link">- Кошку</a>
+                                    <a href="#" class="header-nav__drop-link">- Другое животное</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link" data-title="О нас">О нас</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link" data-title="Блог">Блог</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link" data-title="Памятка">Памятка</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__announc">
+                <a href="#" class="btn btn_fill btn_fz_14">Добавить объявление</a>
+            </div>
+            <div class="header-language header__header-language">
+                <div class="header-language__current">RU</div>
+                <ul class="header-language__list">
+                    <li>
+                        <a href="#" class="header-language__list-item">RU</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-language__list-item">RU</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#modal-signin" class="header__signin" data-modal>
+                Войти
+            </a>
+            <div class="menu-btn header__menu-btn js-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="container">
+                <div class="mobile-menu__content">
+                    <ul class="mobile-menu__nav">
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__link">
+                                Доска объявлений
+                            </a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <div class="mobile-menu__sub">
+                                <div class="mobile-menu__sub-row">
+                                    <div class="mobile-menu__sub-column">
+                                        <div class="mobile-menu__sub-title">
+                                            Ищу
+                                        </div>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Собаку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Кошку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Другое животное
+                                        </a>
+                                    </div>
+                                    <div class="mobile-menu__sub-column">
+                                        <div class="mobile-menu__sub-title">
+                                            Нашел
+                                        </div>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Собаку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Кошку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Другое животное
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mobile-menu__sub-row">
+                                    <div class="mobile-menu__sub-column">
+                                        <div class="mobile-menu__sub-title">
+                                            Отдам/Продам
+                                        </div>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Собаку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Кошку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Другое животное
+                                        </a>
+                                    </div>
+                                    <div class="mobile-menu__sub-column">
+                                        <div class="mobile-menu__sub-title">
+                                            Возьму/куплю
+                                        </div>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Собаку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Кошку
+                                        </a>
+                                        <a href="#" class="mobile-menu__sub-link">
+                                            - Другое животное
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__link">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#" class="mobile-menu__link">
+                                Памятка
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__btn">
+                        <a href="#" class="btn btn_fill btn_fz_14">Добавить объявление</a>
+                    </div>
+                    <div class="mobile-menu__language">
+                        <div class="header-language mobile-menu__header-language">
+                            <div class="header-language__current">RU</div>
+                            <ul class="header-language__list">
+                                <li>
+                                    <a href="#" class="header-language__list-item">RU</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-language__list-item">RU</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <div class="section section_top">
+                <div class="container">
+                    <a href="#modal-signin" class="btn btn_fill btn_size_small btn_fz_14" data-modal>Вход</a>
+                    <button class="btn btn_fill btn_size_small btn_fz_14"
+                        data-modal="#modal-signup">Регистрация</button>
+                    <div class="btn btn_fill btn_size_small btn_fz_14" data-modal="#modal-sign-phone">Вход через телефон
+                    </div>
+                    <a href="#modal-sign-confirm" class="btn btn_fill btn_size_small btn_fz_14" data-modal>Вход через
+                        телефон </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <img src="img/logo.svg" class="footer__logo-img">
+                    <span class="footer__logo-text">LostDog</span>
+                </div>
+                <div class="footer__copy">
+                    © 2021 lostdog
+                </div>
+                <a href="tel:+74355434343" class="footer__phone">+7 (435) 543 43 43</a>
+                <div class="footer__add">
+                    <a href="#" class="btn btn_fill btn_size_small btn_fz_10">Добавить объявление</a>
+                </div>
+            </div>
+            <nav class="footer-nav footer__nav">
+                <div class="footer-nav__head">
+                    Доска объявлений
+                </div>
+                <div class="footer-nav__top">
+                    <ul class="footer-nav__column">
+                        <li>
+                            <div class="footer-nav__title">
+                                Ищу
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Собаку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Кошку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Другое животное
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav__column">
+                        <li>
+                            <div class="footer-nav__title">
+                                Отдам/Продам
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Собаку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Кошку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Другое животное
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav__column">
+                        <li>
+                            <div class="footer-nav__title">
+                                Нашел
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Собаку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Кошку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Другое животное
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav__column">
+                        <li>
+                            <div class="footer-nav__title">
+                                Возьму/куплю
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Собаку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Кошку
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-nav__link">
+                                - Другое животное
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav__bottom">
+                    <div class="footer-nav__column">
+                        <a href="#" class="footer-nav__link">
+                            О нас
+                        </a>
+                    </div>
+                    <div class="footer-nav__column">
+                        <a href="#" class="footer-nav__link">
+                            Блог
+                        </a>
+                    </div>
+                    <div class="footer-nav__column">
+                        <a href="#" class="footer-nav__link">
+                            Памятка
+                        </a>
+                    </div>
+                    <div class="footer-nav__column">
+                        <a href="#" class="footer-nav__link">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="footer__copy footer__copy_mobile">
+                © 2021 lostdog
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <svg class="hidden-content" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svg_gradient" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9AB0FF" />
+                <stop offset="1" stop-color="#98A2FF" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div class="modal" id="modal-signin">
+    <div class="modal__outer js-close-modal">
+        <div class="modal__inner ">
+            <div class="gradient-border modal-content">
+                <div class="btn-close modal-content__btn-close js-close-modal"></div>
+                <div class="modal-content__head">
+                    Вход
+                </div>
+                <div class="modal-content__head-text">
+                    Нет аккаунта? <a href="#modal-signup" data-modal>Регистрация</a>
+                </div>
+                <div class="modal-content__container">
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                E-mail
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                Пароль
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="password">
+                                </div>
+                            </div>
+                            <div class="modal-content__remember-pass">
+                                <a href="#modal-pass">забыли пароль?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_fill btn_size_big modal-content__btn modal-content__btn-signin">
+                        Вход
+                    </button>
+                    <div class="modal-content__social">
+                        <div class="modal-content__social-text">
+                            или войти через:
+                        </div>
+                        <div class="modal-content__social-list">
+                            <a href="#" class="modal-content__social-item">
+                                <svg width="21" height="38" viewBox="0 0 21 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.5885 37.3864V20.3339H19.31L20.1684 13.6863H13.5885V9.4428C13.5885 7.51877 14.1206 6.20756 16.8827 6.20756L20.3999 6.20612V0.260265C19.7917 0.181222 17.7038 0 15.2737 0C10.1992 0 6.72517 3.0974 6.72517 8.78443V13.6863H0.986328V20.3339H6.72517V37.3864H13.5885Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="modal-content__social-item">
+                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.9085 8.84012C20.5947 8.84012 22.2155 9.28382 23.598 10.1236L25.1775 11.1785C25.7281 11.5461 26.4686 11.4811 26.9428 11.0226L31.5496 6.5682C31.8444 6.28314 31.9934 5.88472 31.9561 5.48141C31.919 5.07809 31.6993 4.71209 31.3572 4.48299L28.6797 2.69081C28.6252 2.65441 28.5679 2.62163 28.5087 2.5932L25.9149 1.34323C25.8806 1.32657 25.8455 1.31136 25.8099 1.29759C23.5755 0.436637 21.2215 0 18.8133 0C13.8486 0 9.16556 1.85992 5.62681 5.23656C2.03331 8.66554 0.0349705 13.3284 0.000458767 18.3663C-0.0342386 23.4052 1.90028 28.095 5.4472 31.5715C8.96665 35.0213 13.9599 37 19.1469 37C24.2787 37 29.0937 35.0551 32.3569 31.6642C34.9418 28.9783 36.528 25.3907 36.9449 21.2892C36.9488 21.2503 36.9512 21.2114 36.9516 21.1724L36.9999 17.4879C37.001 17.4117 36.9954 17.3356 36.9832 17.2603L36.7809 16.0011C36.675 15.3402 36.0914 14.8531 35.4062 14.8531H19.3245C18.5557 14.8531 17.9328 15.4612 17.9328 16.2113V21.6411C17.9328 22.3912 18.5557 22.9994 19.3245 22.9994H27.523C27.1473 23.8033 26.5552 24.651 25.8065 25.441C24.1735 27.1647 21.7382 28.1534 19.125 28.1534C16.4563 28.1534 13.9005 27.1327 12.1132 25.3532C8.39257 21.65 8.43525 15.1975 12.2039 11.5451C13.9781 9.82622 16.4219 8.84012 18.9085 8.84012Z" />
+                                </svg>
+                            </a>
+                            <a href="#modal-sign-phone" class="modal-content__social-item" data-modal="">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.3691 27.4378L31.1517 22.2204C29.2884 20.3571 26.1207 21.1025 25.3753 23.5248C24.8163 25.2019 22.953 26.1336 21.276 25.7608C17.5493 24.8291 12.5182 19.9844 11.5866 16.0714C11.0275 14.3943 12.1456 12.531 13.8226 11.972C16.2449 11.2267 16.9903 8.05899 15.1269 6.19564L9.90954 0.978259C8.41886 -0.326086 6.18284 -0.326086 4.8785 0.978259L1.33813 4.51862C-2.20223 8.24532 1.7108 18.1211 10.4685 26.8788C19.2263 35.6366 29.102 39.736 32.8287 36.0092L36.3691 32.4689C37.6735 30.9782 37.6735 28.7422 36.3691 27.4378Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-signup">
+    <div class="modal__outer js-close-modal">
+        <div class="modal__inner ">
+            <div class="gradient-border modal-content">
+                <div class="btn-close modal-content__btn-close js-close-modal"></div>
+                <div class="modal-content__head">
+                    Регистрация
+                </div>
+                <div class="modal-content__head-text">
+                    Уже есть аккаунт? <a href="#modal-signin" data-modal>Войти</a>
+                </div>
+                <div class="modal-content__container">
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                E-mail
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                Телефон
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                Пароль
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                Повторите пароль
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content__reacptch">
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    </div>
+                    <button class="btn btn_fill btn_size_big modal-content__btn modal-content__btn-signin">
+                        Регистрация
+                    </button>
+                    <div class="modal-content__term-note">
+                        Нажимая на кнопку, я оглашаюсь <br>
+                        с Политикой конфиденциальности
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-sign-phone">
+    <div class="modal__outer js-close-modal">
+        <div class="modal__inner ">
+            <div class="gradient-border modal-content">
+                <div class="btn-close modal-content__btn-close js-close-modal"></div>
+                <div class="modal-content__head">
+                    Вход через&nbsp;телефон
+                </div>
+                <div class="modal-content__head-text">
+                    Введите номер телефона
+                </div>
+                <div class="modal-content__container">
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                Телефон
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_fill btn_size_big modal-content__btn modal-content__btn-signin"
+                        data-modal="#modal-sign-confirm">
+                        Продолжить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-sign-confirm">
+    <div class="modal__outer js-close-modal">
+        <div class="modal__inner ">
+            <div class="gradient-border modal-content">
+                <div class="btn-close modal-content__btn-close js-close-modal"></div>
+                <div class="modal-content__head">
+                    Вход через&nbsp;телефон
+                </div>
+                <div class="modal-content__head-text">
+                    Введите код из смс
+                </div>
+                <div class="modal-content__container">
+                    <div class="modal-content__row">
+                        <div class="input-box modal-content__input-box">
+                            <div class="input-box__label modal-content__label">
+                                Код
+                            </div>
+                            <div class="input-box__input modal-content__input">
+                                <div class="input-container">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_fill btn_size_big modal-content__btn modal-content__btn-signin">
+                        Вход
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-location">
+    <div class="modal__outer js-close-modal">
+        <div class="modal__inner ">
+            <div class="gradient-border modal-content modal-content_map">
+                <div class="btn-close modal-content__btn-close js-close-modal"></div>
+                <div class="modal-content__head modal-content__location-current">
+                    Москва
+                </div>
+                <div class="modal-content__map" id="map-location-modal"></div>
+                <div class="modal-content__map-btns">
+                    <button class="btn btn_fill btn_fz_14 modal-content__btn js-get-location-modal">
+                        Определить местоположение
+                    </button>
+                    <button class="btn btn_fill btn_fz_14 modal-content__btn js-close-modal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

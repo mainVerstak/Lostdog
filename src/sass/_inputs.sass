@@ -1,0 +1,278 @@
+.input-container
+    min-width: 50px
+    max-width: 100%
+    width: 100%
+    position: relative
+    border-radius: 8px
+    &:before
+        content: ""
+        position: absolute
+        z-index: 1
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        padding: 1px
+        border-radius: inherit
+        background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+        mask-composite: exclude
+        pointer-events: none
+    textarea,
+    input
+        font-family: $f-m
+        font-weight: 400
+        font-size: 18px
+        color: #141417
+        background: transparent
+        box-shadow: none
+        width: 100%
+        height: 60px
+        padding: 0 16px
+        border: none
+        appearance: none
+        border-radius: 0
+        border-radius: inherit
+        &:focus
+            outline: none
+    textarea
+        height: 132px
+        padding-top: 16px
+        padding-bottom: 16px
+        resize: none
+    &_datepicker
+        input
+            padding-right: 50px
+        &::after
+            content: ""
+            position: absolute
+            top: 50%
+            right: 24px
+            transform: translateY(-50%)
+            width: 25px
+            height: 23px
+            background: url(../img/icon-calendar.svg)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            pointer-events: none
+
+.input-box
+    width: 100%
+    &__label
+        font-weight: bold
+        font-size: 18px
+        line-height: 100%
+        color: #141417
+        margin-bottom: 15px
+    &__input
+    &__get-location
+        margin-top: 15px
+
+.radio-styled
+    display: inline-block
+    position: relative
+    padding-left: 35px
+    cursor: pointer
+    user-select: none
+    font-size: 18px
+    line-height: 18px
+    color: #141417
+    input
+        position: absolute
+        top: 0
+        left: 0
+        width: 0
+        height: 0
+        opacity: 0
+        &:checked
+            ~ .radio-styled
+                &__checkmark
+                    &::after
+                        opacity: 1
+                &__animal
+                    fill: url(#svg_gradient)
+                    //padding-bottom: 1px
+                    //border-bottom-width: 2px
+    &__checkmark
+        position: absolute
+        top: 0
+        left: 0
+        width: 18px
+        height: 18px
+        border-radius: 50%
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            padding: 1px
+            border-radius: inherit
+            background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+            mask-composite: exclude
+        &::after
+            content: ""
+            position: absolute
+            z-index: 1
+            top: 5px
+            left: 5px
+            width: 8px
+            height: 8px
+            border-radius: inherit
+            background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+            opacity: 0
+            transition: .2s
+    &__animal
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        stroke: url(#svg_gradient)
+        transition: .1s
+        border-bottom: 0px solid #9AB0FF
+    &_animal
+        input
+            &:checked
+                ~ span
+                        position: relative
+                        &::after
+                            content: ""
+                            position: absolute
+                            bottom: -2px
+                            left: 0
+                            width: 100%
+                            height: 2px
+                            background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+.load-photo
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -10px -20px
+    &__item
+        margin: 0 10px 20px
+        width: 295px
+        height: 190px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 10px
+        position: relative
+        z-index: 1
+        overflow: hidden
+        transition: .2s
+        &:before
+            content: ""
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            padding: 1px
+            border-radius: inherit
+            background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+            mask-composite: exclude
+            pointer-events: none
+        &:hover
+            .load-photo
+                &__remove
+                    opacity: 1
+        input
+            position: absolute
+            top: 0
+            left: 0
+            width: 0
+            height: 0
+            opacity: 0
+        &_add
+            cursor: pointer
+            &:hover
+                background: linear-gradient(91.23deg, rgba(154, 176, 255, 0.1) 24.8%, rgba(152, 162, 255, 0.1) 96.43%)
+    &__img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__remove
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: linear-gradient(91.23deg, rgba(154, 176, 255, 0.8) 24.8%, rgba(152, 162, 255, 0.8) 96.43%)
+        opacity: 0
+        border-radius: inherit
+        transition: .2s
+        display: flex
+        align-items: center
+        justify-content: center
+    &__btn
+        width: 26px
+        height: 26px
+        background: url(../img/icon-delete.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        cursor: pointer
+        transition: .2s
+        &:hover
+            opacity: .7
+    &__btn-add
+        width: 67px
+        height: 67px
+        background: url(../img/icon-add.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        cursor: pointer
+        transition: .2s
+        border-radius: 50%
+        position: relative
+        z-index: 1
+        &:before
+            content: ""
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            padding: 1px
+            border-radius: inherit
+            background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+            mask-composite: exclude
+            pointer-events: none
+
+@media only screen and (max-width : 991px)
+    .input-box
+        &__label
+            margin-bottom: 12px
+
+    .radio-styled
+        padding-left: 25px
+        font-size: 16px
+        &__animal
+            transform: translate(-15%, -50%)
+    .load-photo
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -5px -10px
+        &__item
+            margin: 0 5px 10px
+            width: 155px
+            height: 100px
+        &__btn-add
+            width: 35px
+            height: 35px
+
+    .input-container
+        textarea,
+        input
+            font-size: 16px
+            height: 46px
+        textarea
+            height: 130px

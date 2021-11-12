@@ -1,0 +1,258 @@
+*,
+::after,
+::before
+    box-sizing: border-box
+
+input[type="submit"]
+    appearance: none
+
+input::-webkit-outer-spin-button
+input::-webkit-inner-spin-button
+    appearance: none
+    margin: 0
+
+input[type="number"]
+    appearance: textfield
+
+input[type="number"]:invalid
+    box-shadow: initial
+
+img
+    vertical-align: top
+
+a
+    text-decoration: none
+    color: inherit
+    transition: 0.2s
+
+ol,
+ul
+    padding: 0px
+    margin: 0px
+    list-style: none
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    margin: 0
+
+html
+    height: 100%
+    width: 100%
+
+body
+    font-family: $f-m
+    font-size: 18px
+    color: #000
+    text-size-adjust: 100%
+    margin: 0
+    width: 100%
+    height: 100%
+    background: #ffffff
+
+.wrapper
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+.main
+    flex-grow: 1
+    flex-shrink: 0
+    display: flex
+    align-items: stretch
+    justify-content: stretch
+    flex-direction: column
+
+.container
+    max-width: 1280px
+    padding: 0 20px
+    width: 100%
+    margin: 0 auto
+    &__inner
+        max-width: 1030px
+        width: 100%
+        margin: 0 auto
+
+.scroll-lock
+    overflow: hidden
+
+.hidden-content
+    visibility: hidden
+    position: absolute
+    top: 0
+    left: 0
+    width: 0
+    height: 0
+
+.t-center
+    text-align: center
+.t-bold
+    font-weight: 700
+.t-medium
+    font-weight: 500
+.t-regular
+    font-weight: 400
+.t-light
+    font-weight: 300
+
+.h1
+    font-weight: 800
+    font-size: 72px
+    line-height: 109.5%
+    color: #2E2532
+    &_mb
+        &_56
+            margin-bottom: 56px
+        &_40
+            margin-bottom: 40px
+.h2
+    font-weight: 800
+    font-size: 54px
+    line-height: 109.5%
+    color: #2E2532
+.h3
+    font-weight: 800
+    font-size: 44px
+    line-height: 109.5%
+    color: #2E2532
+.h4
+    font-weight: 800
+    font-size: 24px
+    line-height: 109.5%
+    color: #2E2532
+
+.gradient-border
+    box-shadow: 0px 7px 15px rgba(25, 26, 38, 0.12)
+    border-radius: 10px
+    position: relative
+    z-index: 1
+    &:before
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        padding: 1px
+        border-radius: inherit
+        background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+        mask-composite: exclude
+        pointer-events: none
+
+.show-more
+    display: flex
+    justify-content: center
+    margin-top: 40px
+
+.t-location
+    font-family: $f-os
+    font-size: 18px
+    line-height: 100%
+    color: #101010
+    padding-left: 22px
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 13px
+        height: 17px
+        background: url(../img/icon-pin2.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        pointer-events: none
+
+.t-date
+    background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    font-family: $f-os
+    font-weight: bold
+    line-height: 100%
+
+.gradient-link
+    display: inline-block
+    font-weight: 800
+    line-height: 129.18%
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    position: relative
+    padding-bottom: 2px
+    &::after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 2px
+        background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+
+.lost-dog
+    margin-top: 72px
+.pet-announcement
+    margin-top: 128px
+.section
+    &_top
+        margin-top: 90px
+
+
+@media only screen and (max-width : 1299px)
+    .container
+        max-width: 1150px
+
+@media only screen and (max-width : 1199px)
+    .container
+        max-width: 984px
+    
+    .h1
+        font-size: 64px
+        &_mb
+            &_56
+                margin-bottom: 40px
+            &_40
+                margin-bottom: 30px
+
+    .pet-announcement
+        margin-top: 80px
+
+@media only screen and (max-width : 991px)
+    .container
+        max-width: 728px
+
+    .h1
+        font-size: 34px
+        &_mb
+            &_56
+                margin-bottom: 20px
+            &_40
+                margin-bottom: 20px
+    .h2
+        font-size: 34px
+    .h3
+        font-size: 24px
+
+    .pet-announcement
+        margin-top: 50px
+    .section
+        &_top
+            margin-top: 60px
+
+    .lost-dog
+        margin-top: 40px
+
+@media only screen and (max-width : 359px)
+    .container
+        padding-right: 15px
+        padding-left: 15px

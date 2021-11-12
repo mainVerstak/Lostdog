@@ -1,0 +1,40 @@
+.range-slider-wrapper
+    padding-top: 35px
+.range-slider
+    &.noUi-target
+        background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+        border-radius: 32px
+        box-shadow: none
+        border: none
+        height: 3px
+        .noUi-handle
+            width: 19px
+            height: 19px
+            right: -9px
+            top: -8px
+            border-radius: 50%
+            background: linear-gradient(91.23deg, #9AB0FF 24.8%, #98A2FF 96.43%)
+            box-shadow: none
+            border: none
+            cursor: pointer
+            transition: .15s
+            &::after,
+            &::before
+                display: none
+            &:hover
+                transform: scale(1.1)
+        .noUi-tooltip
+            border: none
+            background: transparent
+            box-shadow: none
+            font-size: 24px
+            line-height: 100%
+            color: #101010
+            padding: 0
+
+@media only screen and (max-width : 767px)
+    .range-slider-wrapper
+        padding-top: 30px
+    .range-slider.noUi-target 
+        .noUi-tooltip
+            font-size: 16px

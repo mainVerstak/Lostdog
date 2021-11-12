@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@700&family=Quattrocento+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="main">
+
+            <div class="section section_top">
+                <div class="container">
+                    <div class="container__inner">
+                        <div class="h1 h1_mb_56">
+                            Добавьте <br>
+                            объявление о&nbsp;питомце
+                        </div>
+                    </div>
+                    <div class="gradient-border form-box form-box_full">
+                        <div class="form-box__head">
+                            <div class="form-box__container">
+                                <div class="form-box__top">
+                                    <a href="#" class="form-box__back">
+                                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.444183 5.92922L5.33932 10.8243C5.45254 10.9376 5.60368 11 5.76483 11C5.92598 11 6.07712 10.9376 6.19034 10.8243L6.55083 10.4639C6.78541 10.229 6.78541 9.84733 6.55083 9.61285L2.44026 5.50228L6.5554 1.38715C6.66861 1.27384 6.73113 1.1228 6.73113 0.961733C6.73113 0.80049 6.66861 0.649442 6.5554 0.536045L6.1949 0.175731C6.08159 0.0624227 5.93055 7.68056e-07 5.76939 7.53968e-07C5.60824 7.39879e-07 5.4571 0.0624227 5.34388 0.175731L0.444183 5.07525C0.330696 5.18892 0.268364 5.34068 0.268721 5.50201C0.268364 5.66397 0.330696 5.81564 0.444183 5.92922Z" />
+                                        </svg>
+                                        Редактировать
+                                    </a>
+                                </div>
+                                <div class="form-box__title">
+                                    Пропала собака
+                                </div>
+                                <div class="form-box__info">
+                                    <span class="form-box__date">
+                                        12.04.2021
+                                    </span>
+                                    <span class="form-box__city">
+                                        Россия г. Москва
+                                    </span>
+                                    <span class="form-box__mail">
+                                        Ivan@gmail.com
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box__content">
+                            <div class="form-box__container">
+                                <div class="input-box form-box__radio-box">
+                                    <div class="input-box__label form-box__radio-label">
+                                        Пол
+                                    </div>
+                                    <ul class="form-box__radio-list2">
+                                        <li>
+                                            <label class="radio-styled">М
+                                                <input type="radio" name="radio" checked>
+                                                <span class="radio-styled__checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="radio-styled">Ж
+                                                <input type="radio" name="radio">
+                                                <span class="radio-styled__checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="radio-styled">Неизвестно
+                                                <input type="radio" name="radio">
+                                                <span class="radio-styled__checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-box__row">
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Порода
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Возраст
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-box__row">
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Окрас
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Кличка
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-box__row">
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Описание
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <textarea></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-box__row form-box__row_mb_26">
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Адрес
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <button class="get-location form-box__get-location js-get-location">
+                                            Определить мое местоположение
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-box__map" id="map-location"></div>
+                                <div class="form-box__row">
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Добавить фотографии
+                                        </div>
+                                        <div class="input-box__input form-box__photo">
+                                            <div class="load-photo js-load-img-list">
+                                                <div class="load-photo__item">
+                                                    <img src="img/blog1.png" class="load-photo__img">
+                                                    <div class="load-photo__remove js-remove-img">
+                                                        <div class="load-photo__btn"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="load-photo__item">
+                                                    <img src="img/blog2.png" class="load-photo__img">
+                                                    <div class="load-photo__remove js-remove-img">
+                                                        <div class="load-photo__btn"></div>
+                                                    </div>
+                                                </div>
+                                                <label class="load-photo__item load-photo__item_add">
+                                                    <input class="js-load-img" type="file"
+                                                        accept="image/x-png,image/bmp,image/jpeg">
+                                                    <div class="load-photo__btn-add"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-box__row">
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Ваше имя
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-box form-box__input-box">
+                                        <div class="input-box__label form-box__label">
+                                            Ваш телефон
+                                        </div>
+                                        <div class="input-box__input form-box__input">
+                                            <div class="input-container">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-box__btn-column">
+                                    <div class="form-box__reacptch">
+                                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                                    </div>
+                                    <button class="btn btn_fill form-box__publish">
+                                        Опубликовать
+                                    </button>
+                                    <div class="form-box__note">
+                                        Нажимая на кнопку, я оглашаюсь <br>
+                                        с Политикой конфиденциальности
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="remember remember_bottom">
+                @@include('_remember.html')
+            </div>
+        </main>
+
+        @@include('_footer.html')
+    </div>
+    <svg class="hidden-content" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svg_gradient" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9AB0FF" />
+                <stop offset="1" stop-color="#98A2FF" />
+            </linearGradient>
+        </defs>
+    </svg>
+    @@include('_modal.html')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@700&family=Quattrocento+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="main">
+            <div class="section section_top">
+                <div class="container">
+                    <a href="#modal-signin" class="btn btn_fill btn_size_small btn_fz_14" data-modal>Вход</a>
+                    <button class="btn btn_fill btn_size_small btn_fz_14"
+                        data-modal="#modal-signup">Регистрация</button>
+                    <div class="btn btn_fill btn_size_small btn_fz_14" data-modal="#modal-sign-phone">Вход через телефон
+                    </div>
+                    <a href="#modal-sign-confirm" class="btn btn_fill btn_size_small btn_fz_14" data-modal>Вход через
+                        телефон </a>
+                </div>
+            </div>
+        </main>
+
+        @@include('_footer.html')
+    </div>
+    <svg class="hidden-content" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svg_gradient" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9AB0FF" />
+                <stop offset="1" stop-color="#98A2FF" />
+            </linearGradient>
+        </defs>
+    </svg>
+    @@include('_modal.html')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

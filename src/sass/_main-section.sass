@@ -1,0 +1,145 @@
+.main-section
+    height: 700px
+    width: 100%
+    position: relative
+    margin-top: -90px
+    overflow: hidden
+    &__bg
+        position: absolute
+        width: 100%
+        height: 100%
+        pointer-events: none
+        background: #ffe5d5
+        overflow: hidden
+        video
+            &::-webkit-media-controls
+                display: none
+            
+                    
+    &__bg-video
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        height: 100%
+        &::after,
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            height: 100%
+            width: 100vw
+            background-size: 1px 100%
+        &::before
+            right: 95%
+            background-image: url(../img/bg-main-video-left.png)
+        &::after
+            left: 95%
+            background-image: url(../img/bg-main-video-right.png)
+    &__video-desktop
+        height: 100%
+    &__video-mobile
+        display: none
+        height: 100%
+    &__img
+        position: absolute
+        top: 0
+        left: 50%
+        height: 100%
+        transform: translateX(-50%)
+        object-fit: cover
+        mix-blend-mode: darken
+        img
+            height: 100%
+            object-fit: cover
+    .container
+        height: 100%
+        display: flex
+        align-items: center
+    &__content
+        position: relative
+        z-index: 1
+        padding-top: 100px
+        padding-bottom: 20px
+        max-width: 700px
+    &__title
+        margin-bottom: 52px
+    &__btns
+        display: flex
+        .btn
+            margin-right: 30px
+            &:last-child
+                margin-right: 0
+    &__text
+        font-size: 18px
+        line-height: 100%
+        color: #101010
+        max-width: 500px
+        margin-bottom: 48px
+    &__add
+        max-width: 444px
+        width: 100%
+    &_blog
+        height: 564px
+        .main-section
+            &__bg
+                background: linear-gradient(110.54deg,#fde8e0 20.98%,#fce6e0 52.84%,#fee0d6 88.19%)
+            &__title
+                margin-bottom: 37px
+
+@media only screen and (max-width : 1199px)
+    .main-section
+        height: 640px
+        &__content
+            max-width: 600px
+
+@media only screen and (max-width : 991px)
+    .main-section
+        height: 1230px
+        &__bg-video
+            &::after
+                background-image: url(../img/bg-main-video-mob-left.png)
+            &::before
+                background-image: url(../img/bg-main-video-mob-right.png)
+        &__video-desktop
+            display: none
+        &__video-mobile
+            display: block
+        .container
+            align-items: flex-start
+        &__content
+            padding-top: 160px
+            max-width: 600px
+        &__title
+            margin-bottom: 35px
+            font-size: 64px
+        &_blog
+            height: 800px
+            .main-section
+                &__bg
+                    background: #FFE5D5
+                &__img
+                    img
+                        object-position: 50% 80%
+
+@media only screen and (max-width : 767px)
+    .main-section
+        height: 640px
+        margin-top: -46px
+        &__title
+            font-size: 34px
+            margin-bottom: 24px
+            max-width: 320px
+        &__content
+            padding-top: 84px
+        &__btns
+            .btn
+                font-size: 16px
+                margin-right: 20px
+        &__text
+            margin-bottom: 30px
+        &_blog
+            height: 570px
+            .main-section
+                &__title
+                    margin-bottom: 16px

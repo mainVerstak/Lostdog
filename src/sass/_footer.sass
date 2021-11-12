@@ -1,0 +1,133 @@
+.footer
+    background: linear-gradient(91.54deg, #FDE8E0 20.98%, #FCE6E0 52.84%, #FAE8D4 88.19%)
+    position: relative
+    overflow: hidden
+    flex: 1 0 auto
+    &::after
+        content: ""
+        position: absolute
+        top: 140px
+        left: 50%
+        transform: translateX(-50%)
+        width: 505px
+        height: 434px
+        background: #FFDAEB
+        opacity: 0.5
+        filter: blur(100px)
+        pointer-events: none
+    &__inner
+        position: relative
+        z-index: 1
+        display: flex
+        padding: 65px 0 48px
+    &__left
+        max-width: 190px
+        width: 100%
+        margin-right: 125px
+    &__logo
+        display: flex
+        align-items: flex-end
+        margin-bottom: 11px
+    &__logo-img
+        width: 46px
+    &__logo-text
+        font-family: $f-qs
+        font-weight: bold
+        font-size: 22px
+        line-height: 24px
+        color: #313547
+    &__copy
+        font-size: 14px
+        line-height: 139.68%
+        color: #000000
+        margin-bottom: 29px
+        &_mobile
+            display: none
+            margin-bottom: 0
+    &__phone
+        font-family: $f-os
+        font-size: 18px
+        line-height: 139.68%
+        color: #000000
+        &:hover
+            color: #313547
+    &__add
+        width: 100%
+        margin-top: 23px
+        .btn
+            width: 100%
+
+.footer-nav
+    font-size: 14px
+    line-height: 20px
+    flex: 1
+    color: #000000
+    &__top
+        display: flex
+        margin-bottom: 46px
+    &__bottom
+        display: flex
+    &__column
+        flex: 1
+        &:last-child
+            flex-grow: 0
+            flex-basis: 240px
+    &__head
+        font-weight: bold
+        margin-bottom: 11px
+    &__title
+        margin-bottom: 2px
+    &__link
+        &:hover
+            color: #313547
+
+@media only screen and (max-width : 991px)
+    .footer
+        &::after
+            display: none
+        &__inner
+            flex-direction: column
+            padding: 33px 0 40px
+        &__left
+            margin: 0 0 36px
+            max-width: 100%
+            display: flex
+            align-items: flex-end
+            justify-content: space-between
+            flex-wrap: wrap
+        &__logo
+            margin-bottom: 0
+        &__add
+            width: 100%
+            margin-top: 28px
+        &__copy
+            display: none
+            &_mobile
+                display: block
+
+    .footer-nav
+        &__head
+            margin-bottom: 24px
+        &__bottom
+            flex-wrap: wrap
+            .footer-nav__column
+                margin-bottom: 26px
+        &__column
+            &:last-child
+                flex-basis: auto
+
+@media only screen and (max-width : 767px)
+    .footer-nav
+        &__top
+            flex-wrap: wrap
+            justify-content: space-between
+            margin-bottom: 15px
+            .footer-nav__column
+                margin-bottom: 20px
+                margin-right: 5px
+                flex: none
+                
+
+        &__bottom
+            flex-wrap: wrap
+            

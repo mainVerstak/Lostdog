@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@700&family=Quattrocento+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="main">
+
+            <div class="section section_top blog-article">
+                <div class="container">
+                    <div class="container__inner">
+                        <div class="h1 blog-article__title">
+                            История
+                        </div>
+                        <div class="t-date blog-article__date">
+                            28.02.2021
+                        </div>
+                        <div class="blog-article__content">
+                            <img src="img/blog-detailed.png" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut Lorem ipsum dolor sit amet, consectetur s nostrud exercitation ullamco
+                                laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p>
+                                Ut enimm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut Lorem ipsum dolor sit amet, consectetur s nostrud exercitation ullamco
+                                laboris nisi ut Lorem ipsum dolor sit amet, c ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni
+                            </p>
+                        </div>
+                        <div class="blog-article__comments">
+                            <div class="blog-article__comment-head">
+                                Комментарии
+                            </div>
+                            <div class="blog-article__comment">
+                                <div class="blog-article__comment-name">
+                                    Иван Иванов
+                                </div>
+                                <div class="blog-article__comment-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                        irure dolor in
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blog-article__comment">
+                                <div class="blog-article__comment-name">
+                                    Иван Иванов
+                                </div>
+                                <div class="blog-article__comment-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                        irure dolor in
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blog-article__form-comment">
+                                <div class="input-container blog-article__comment-input">
+                                    <textarea placeholder="Оставить комментарий.."></textarea>
+                                </div>
+                                <buttom class="btn btn_fill btn_fz_14 btn_w_260 blog-article__add-comment">ОТПРАВИТЬ
+                                </buttom>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-story">
+                <div class="container">
+                    <div class="add-story__inner">
+                        <a href="#" class="btn btn_fill btn_flex add-story__btn">Добавить свою&nbsp;историю</a>
+                    </div>
+                </div>
+            </div>
+            <div class="remember">
+                @@include('_remember.html')
+            </div>
+        </main>
+
+        @@include('_footer.html')
+    </div>
+    <svg class="hidden-content" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svg_gradient" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9AB0FF" />
+                <stop offset="1" stop-color="#98A2FF" />
+            </linearGradient>
+        </defs>
+    </svg>
+    @@include('_modal.html')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

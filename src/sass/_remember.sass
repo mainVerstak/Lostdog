@@ -1,0 +1,99 @@
+.remember
+    background: #F4F4F4
+    &__inner
+        padding: 90px 0px 90px 0px
+        display: flex
+    &__title
+        margin-right: 50px
+        flex-grow: 0
+        max-width: 396px
+    &__slider
+        max-width: 605px
+        width: 100%
+        margin-right: -20px
+    &_bottom
+        margin-top: 84px
+
+.slider-remember
+    width: 100%
+    height: 202px
+    padding-right: 14px
+    &.swiper-container-vertical 
+        > .swiper-pagination-bullets
+            right: 0
+    &.swiper-container-horizontal
+        > .swiper-pagination-bullets
+            bottom: 0
+            display: flex
+            justify-content: center
+            &.swiper-pagination-lock
+                display: none
+
+.slide-remember
+    display: flex
+    color: #2E2532
+    width: 100%
+    &__img
+        width: 190px
+        height: 202px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 50px
+        img
+            display: block
+            max-width: 100%
+            max-height: 100%
+    &__content
+        padding-top: 60px
+        max-width: 284px
+        flex: 1
+    &__title
+        font-weight: 800
+        font-size: 24px
+        line-height: 109.5%
+        color: #2E2532
+        margin-bottom: 13px
+    &__text
+        font-size: 18px
+        line-height: 100%
+        color: #3C3C3C
+
+@media only screen and (max-width : 1199px)
+    .remember
+        &__title
+            margin-right: 30px
+    .slide-remember
+        &__img
+            margin-right: 30px
+
+@media only screen and (max-width : 991px)
+    .remember
+        &__inner
+            padding: 64px 0 50px
+            display: block
+        &__title
+            margin-right: 0
+            margin-bottom: 16px
+            max-width: 100%
+        &__slider
+            margin-right: 0
+            max-width: 100%
+        &_bottom
+            margin-top: 50px
+
+    .slider-remember
+        padding-right: 0
+        padding-bottom: 54px
+        height: auto
+    
+    .slide-remember
+        flex-direction: column
+        align-items: center
+        &__img
+            max-width: 178px
+            margin-right: 0
+            margin-bottom: 20px
+        &__content
+            padding: 0
+            max-width: 100%
